@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/',include('accountapp.urls'))
+    path('accounts/',include('accountapp.urls')),
+    path('profiles/',include('profileapp.urls'))
     ##accountapp 안의 url을 참고해서 분기됨
 ]
