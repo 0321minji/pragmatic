@@ -23,6 +23,7 @@ urlpatterns = [
     path('accounts/',include('accountapp.urls')),
     path('profiles/',include('profileapp.urls')),
     path('articles/',include('articleapp.urls')),
+    path('comments/', include('commentapp.urls'))
     ##accountapp 안의 url을 참고해서 분기됨
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
