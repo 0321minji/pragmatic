@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load bootstrap4 %}
 
 {% block content %}
 
@@ -16,9 +17,9 @@
 
             <img style="width:100%; border-radius: 1rem; margin: 2rem 0;"
                     src="{{ target_article.image.url}}" alt="">
-            <p>
-                {{ target_article.content }}
-            </p>
+            <div class="text-left">
+                {{ target_article.content | safe }}
+            </div>
 
 
 <!--            {% include 'commentapp/create.html' with article=target_article %}-->
